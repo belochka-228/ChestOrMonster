@@ -36,9 +36,10 @@ public static class ItemFactory
         };
     }
 
-    private static Weapon CreateRandomWeapon()
+    private static IWeapon CreateRandomWeapon()
     {
         var template = Weapons[_random.Next(0, Weapons.Length)];
+        if (template.Name == "Лук") return new Luk(template.Name, template.Damage, 40 );
         return new Weapon(template.Name, template.Damage);
     }
     

@@ -21,7 +21,7 @@ namespace ChestOrMonster.Model.Enemy
         {
             Name = "Водяной";
             Hp = 9;
-            Atk = 12;
+            Atk = 4;
             Def = 2;
             AttackType = DamageType.Usual;
             Effect = StatusEffect.None;
